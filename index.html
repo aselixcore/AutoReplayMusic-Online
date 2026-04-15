@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>ARM Online</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="login-screen" class="login-screen" aria-modal="true" role="dialog">
+        <div class="login-box">
+            <h1>Bienvenido a ARM Online</h1>
+            <p>Log In Screen.</p>
+            <form id="login-form">
+                <label for="login-user">Usuario</label>
+                <input id="login-user" type="text" placeholder="Usuario" required>
+                <label for="login-pass">Contraseña</label>
+                <input id="login-pass" type="password" placeholder="Contraseña" required>
+                <button type="submit" class="button">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="app-wrapper">
+        <header class="top-search-container">
+            <img src="img/logo.png" alt="ARM Online" class="app-logo" />
+            <input id="song-search" type="search" placeholder="Buscar canción o álbum..." aria-label="Buscar canciones" class="song-search-input">
+            <div id="search-results-panel" class="search-results-panel hidden" aria-live="polite">
+                <ul id="search-results-list"></ul>
+            </div>
+            <span id="user-greeting" class="user-greeting"></span>
+            <button id="logout-btn" class="button logout-btn hidden" type="button">Cerrar sesión</button>
+        </header>
+
+        <aside class="sidebar">
+            <h1 class="logo">Auto Replay Music Online</h1>
+            <nav class="album-list">
+                <ul id="album-list"></ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <section id="coverflow-section" class="coverflow-section" aria-label="Galería 3D de álbumes">
+                <div id="coverflow-bg" class="coverflow-background"></div>
+                <button id="coverflow-prev" class="coverflow-nav coverflow-nav-prev" aria-label="Álbum anterior">‹</button>
+                <div class="coverflow-wrapper">
+                    <div id="coverflow-track" class="coverflow-track" role="listbox" aria-label="Álbumes" tabindex="0"></div>
+                </div>
+                <button id="coverflow-next" class="coverflow-nav coverflow-nav-next" aria-label="Siguiente álbum">›</button>
+            </section>
+
+            <section id="album-details-panel" class="album-details-panel" aria-live="polite">
+                <div class="album-meta">
+                    <div class="album-texts">
+                        <h2 id="selected-album-title">Selecciona un álbum</h2>
+                        <p id="selected-album-artist" class="subtext">Artista</p>
+                        <p id="selected-album-year" class="subtext">Año · Género · Pistas</p>
+                    </div>
+                    <button id="btn-play-album" class="button glass-btn" aria-label="Reproducir álbum">▶ Reproducir álbum</button>
+                </div>
+            </section>
+
+            <section class="songs-section">
+                <h2 id="songs-title">Canciones</h2>
+                <p id="album-composer" class="album-composer">Compositor: -</p>
+                <ul id="songs-list"></ul>
+            </section>
+        </main>
+    </div>
+
+    <div class="player">
+        <img id="player-cover" src="" alt="Portada" class="player-cover">
+        <div class="player-info">
+            <span id="player-song-name">Ninguna canción seleccionada</span>
+            <span id="player-album-name" class="small-text">-</span>
+        </div>
+        <div class="player-controls">
+            <button id="play-pause-btn" class="play-btn" title="Reproducir/Pausar">▶</button>
+            <button id="prev-btn" class="control-btn" title="Anterior">⏮</button>
+            <button id="next-btn" class="control-btn" title="Siguiente">⏭</button>
+            <div class="progress-container">
+                <span id="current-time">0:00</span>
+                <input type="range" id="progress-bar" min="0" max="100" value="0">
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/audio-service.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

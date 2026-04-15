@@ -1,0 +1,342 @@
+﻿{
+    "mcla":  {
+                 "id":  "mcla",
+                 "name":  "MCLA",
+                 "artist":  "Rockstar Games",
+                 "composer":  "",
+                 "year":  2008,
+                 "genre":  "Electronic",
+                 "folder":  "mcla",
+                 "cover":  "music/mcla/cover.jpg",
+                 "songs":  [
+                               {
+                                   "title":  "Digitalism - Idealistic",
+                                   "file":  "Digitalism - Idealistic.mp3"
+                               },
+                               {
+                                   "title":  "Diplo feat. Rye Rye - Wassup (Crookers Remix)",
+                                   "file":  "Diplo - Wassup (Crookers Remix).mp3"
+                               },
+                               {
+                                   "title":  "Evil Nine Feat. Beans - Set it Off",
+                                   "file":  "Evil Nine - Set It Off.mp3"
+                               },
+                               {
+                                   "title":  "Holy F— - Royal Gregory",
+                                   "file":  "Holy F--- - Royal Gregory.mp3"
+                               },
+                               {
+                                   "title":  "Kid Cudi - Day \u0027N\u0027 Nite (Crookers Remix)",
+                                   "file":  "Kid Cudi - Day \u0027N\u0027 Nite (Crookers Remix).mp3"
+                               },
+                               {
+                                   "title":  "K.I.M. - Wet \u0026 Wild",
+                                   "file":  "K.I.M. - Wet \u0026 Wild.mp3"
+                               },
+                               {
+                                   "title":  "Kudu - Let\u0027s Finish (Sinden Remix)",
+                                   "file":  "Kudu - Let\u0027s Finish (Sinden Remix).mp3"
+                               },
+                               {
+                                   "title":  "Matt Herdman - Wasted Intellect",
+                                   "file":  "Matt Herdman - Wasted Intellect.mp3"
+                               },
+                               {
+                                   "title":  "Santogold - L.E.S. Artistes (Switch Remix)",
+                                   "file":  "SantoGold - L.E.S. Artistes (Switch Remix).mp3"
+                               },
+                               {
+                                   "title":  "SebastiAn - Momy",
+                                   "file":  "SebastiAn - Momy.mp3"
+                               },
+                               {
+                                   "title":  "South Rakkas Crew - Mad Again (Boy 8-Bit Remix)",
+                                   "file":  "South Rakkas Crew - Mad Again (Boy 8 Bit Remix).mp3"
+                               },
+                               {
+                                   "title":  "The Chemical Brothers - Midnight Madness",
+                                   "file":  "The Chemical Brothers - Midnight Madness.mp3"
+                               },
+                               {
+                                   "title":  "The Presets - Kicking and Screaming",
+                                   "file":  "The Presets - Kicking and Screaming.mp3"
+                               },
+                               {
+                                   "title":  "Wolf \u0026 Cub - Targets (Minotaur Shock Remix)",
+                                   "file":  "Wolf \u0026 Cub - Targets (Minotaur Shock Remix).mp3"
+                               },
+                               {
+                                   "title":  "Wolfgang Gartner - Montezuma",
+                                   "file":  "Wolfgang Gartner - Montezuma.mp3"
+                               },
+                               {
+                                   "title":  "Wolfgang Gartner - Squares",
+                                   "file":  "Wolfgang Gartner - Squares.mp3"
+                               }
+                           ]
+             },
+    "hangover":  {
+                     "id":  "hangover",
+                     "name":  "Hangover",
+                     "artist":  "Orishi",
+                     "composer":  "",
+                     "year":  2026,
+                     "genre":  "El Under",
+                     "folder":  "hangover",
+                     "cover":  "music/hangover/cover.jpg",
+                     "songs":  [
+                                   {
+                                       "title":  "Hangovermaster",
+                                       "file":  "hangovermaster.mp3"
+                                   }
+                               ]
+                 },
+    "mbdtf":  {
+                  "id":  "mbdtf",
+                  "name":  "Mbdtf",
+                  "artist":  "Kanye West",
+                  "composer":  "",
+                  "year":  2010,
+                  "genre":  "Rap",
+                  "folder":  "mbdtf",
+                  "cover":  "music/mbdtf/cover.jpg",
+                  "songs":  [
+                                {
+                                    "title":  "Dark Fantasy",
+                                    "file":  "dark_fantasy.mp3"
+                                },
+                                {
+                                    "title":  "Gorgeous",
+                                    "file":  "gorgeous.mp3"
+                                },
+                                {
+                                    "title":  "POWER",
+                                    "file":  "power.mp3"
+                                },
+                                {
+                                    "title":  "All of the Lights (Interlude)",
+                                    "file":  "all_of_the_lights_interlude.mp3"
+                                },
+                                {
+                                    "title":  "All of the Lights",
+                                    "file":  "all_of_the_lights.mp3"
+                                },
+                                {
+                                    "title":  "Monster",
+                                    "file":  "Monster.mp3"
+                                },
+                                {
+                                    "title":  "So Appalled",
+                                    "file":  "so_appalled.mp3"
+                                },
+                                {
+                                    "title":  "Devil in a New Dress",
+                                    "file":  "devil_in_a_new_dress.mp3"
+                                },
+                                {
+                                    "title":  "Runaway",
+                                    "file":  "Runaway.mp3"
+                                },
+                                {
+                                    "title":  "Hell of a Life",
+                                    "file":  "hell_of_a_life.mp3"
+                                },
+                                {
+                                    "title":  "Blame Game",
+                                    "file":  "blame_game.mp3"
+                                },
+                                {
+                                    "title":  "Lost in the World",
+                                    "file":  "lost_in_the_world.mp3"
+                                },
+                                {
+                                    "title":  "Who Will Survive in America",
+                                    "file":  "who_will_survive_in_america.mp3"
+                                }
+                            ]
+              },
+    "meteora":  {
+                    "id":  "meteora",
+                    "name":  "Meteora",
+                    "artist":  "Linkin Park",
+                    "composer":  "",
+                    "year":  2003,
+                    "genre":  "Nu Metal",
+                    "folder":  "meteora",
+                    "cover":  "music/meteora/cover.jpg",
+                    "songs":  [
+                                  {
+                                      "title":  "Foreword",
+                                      "file":  "Foreword.mp3"
+                                  },
+                                  {
+                                      "title":  "Don\u0027t Stay",
+                                      "file":  "dont_stay.mp3"
+                                  },
+                                  {
+                                      "title":  "Somewhere I Belong",
+                                      "file":  "somewhere_i_belong.mp3"
+                                  },
+                                  {
+                                      "title":  "Lying from You",
+                                      "file":  "lying_from_you.mp3"
+                                  },
+                                  {
+                                      "title":  "Hit the Floor",
+                                      "file":  "hit_the_floor.mp3"
+                                  },
+                                  {
+                                      "title":  "Easier to Run",
+                                      "file":  "easier_to_run.mp3"
+                                  },
+                                  {
+                                      "title":  "Faint",
+                                      "file":  "Faint.mp3"
+                                  },
+                                  {
+                                      "title":  "Figure.09",
+                                      "file":  "figure09.mp3"
+                                  },
+                                  {
+                                      "title":  "Breaking the Habit",
+                                      "file":  "breaking_the_habit.mp3"
+                                  },
+                                  {
+                                      "title":  "From the Inside",
+                                      "file":  "from_the_inside.mp3"
+                                  },
+                                  {
+                                      "title":  "Nobody\u0027s Listening",
+                                      "file":  "nobodys_listening.mp3"
+                                  },
+                                  {
+                                      "title":  "Session",
+                                      "file":  "Session.mp3"
+                                  },
+                                  {
+                                      "title":  "Numb",
+                                      "file":  "Numb.mp3"
+                                  }
+                              ]
+                },
+    "tpab":  {
+                 "id":  "tpab",
+                 "name":  "Tpab",
+                 "artist":  "Kendrick Lamar",
+                 "composer":  "",
+                 "year":  2015,
+                 "genre":  "Hip Hop",
+                 "folder":  "tpab",
+                 "cover":  "music/tpab/cover.jpg",
+                 "songs":  [
+                               {
+                                   "title":  "Wesley\u0027s Theory",
+                                   "file":  "wesleys_theory.mp3"
+                               },
+                               {
+                                   "title":  "For Free? (Interlude)",
+                                   "file":  "for_free_interlude.mp3"
+                               },
+                               {
+                                   "title":  "King Kunta",
+                                   "file":  "king_kunta.mp3"
+                               },
+                               {
+                                   "title":  "Institutionalized",
+                                   "file":  "institutionalized.mp3"
+                               },
+                               {
+                                   "title":  "These Walls",
+                                   "file":  "these_walls.mp3"
+                               },
+                               {
+                                   "title":  "u",
+                                   "file":  "u.mp3"
+                               },
+                               {
+                                   "title":  "Alright",
+                                   "file":  "Alright.mp3"
+                               },
+                               {
+                                   "title":  "For Sale? (Interlude)",
+                                   "file":  "for_sale_interlude.mp3"
+                               },
+                               {
+                                   "title":  "Momma",
+                                   "file":  "momma.mp3"
+                               },
+                               {
+                                   "title":  "Hood Politics",
+                                   "file":  "hood_politics.mp3"
+                               },
+                               {
+                                   "title":  "How Much a Dollar Cost",
+                                   "file":  "how_much_a_dollar_cost.mp3"
+                               },
+                               {
+                                   "title":  "Complexion (A Zulu Love)",
+                                   "file":  "complexion_a_zulu_love.mp3"
+                               },
+                               {
+                                   "title":  "The Blacker the Berry",
+                                   "file":  "the_blacker_the_berry.mp3"
+                               },
+                               {
+                                   "title":  "You Ain\u0027t Gotta Lie (Momma Said)",
+                                   "file":  "you_aint_gotta_lie_momma_said.mp3"
+                               },
+                               {
+                                   "title":  "i",
+                                   "file":  "i.mp3"
+                               },
+                               {
+                                   "title":  "Mortal Man",
+                                   "file":  "mortal_man.mp3"
+                               }
+                           ]
+             },
+    "futurenostalgia":  {
+                            "id":  "futurenostalgia",
+                            "name":  "Future Nostalgia",
+                            "artist":  "Dua Lipa",
+                            "composer":  "",
+                            "year":  2020,
+                            "genre":  "Pop",
+                            "folder":  "futurenostalgia",
+                            "cover":  "music/futurenostalgia/cover.jpg",
+                            "songs":  [
+                                          {
+                                              "title":  "Future Nostalgia",
+                                              "file":  "Future Nostalgia.mp3"
+                                          },
+                                          {
+                                              "title":  "Don\u0027t Start Now",
+                                              "file":  "Don\u0027t Start Now.mp3"
+                                          },
+                                          {
+                                              "title":  "Cool",
+                                              "file":  "Cool.mp3"
+                                          },
+                                          {
+                                              "title":  "Physical",
+                                              "file":  "Physical.mp3"
+                                          },
+                                          {
+                                              "title":  "Levitating",
+                                              "file":  "Levitating.mp3"
+                                          },
+                                          {
+                                              "title":  "Pretty Please",
+                                              "file":  "Pretty Please.mp3"
+                                          },
+                                          {
+                                              "title":  "Hallucinate",
+                                              "file":  "Hallucinate.mp3"
+                                          },
+                                          {
+                                              "title":  "Break My Heart",
+                                              "file":  "Break My Heart.mp3"
+                                          }
+                                      ]
+                        }
+}
