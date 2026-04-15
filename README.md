@@ -100,12 +100,6 @@ python -m http.server
 
 ---
 
-## Screenshots
-
-> *(Add screenshots here)*
-
----
-
 ## License
 
 This project is for portfolio and educational purposes. Album artwork belongs to their respective rights holders and is used here solely as UI demonstration assets.
