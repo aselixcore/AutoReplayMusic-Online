@@ -30,7 +30,7 @@ const coverflow = {
 };
 
 function getAlbumDisplayName(albumId, originalName) {
-    return ALBUM_DISPLAY_NAMES[albumId] || originalName || 'Álbum desconocido';
+    return ALBUM_DISPLAY_NAMES[albumId] || originalName || 'Unknown album';
 }
 
 function normalizeArtist(artist) {
@@ -402,10 +402,10 @@ function updateAlbumDetails(albumId) {
     const displayArtist = normalizeArtist(album.artist);
     if (artistEl) artistEl.textContent = displayArtist || '';
 
-    const year = album.year || 'N/D';
-    const genre = album.genre || 'Género desconocido';
+    const year = album.year || 'N/A';
+    const genre = album.genre || 'Unknown genre';
     const count = (album.songs || []).length;
-    if (yearEl) yearEl.textContent = `${year} · ${genre} · ${count} canción${count === 1 ? '' : 'es'}`;
+    if (yearEl) yearEl.textContent = `${year} · ${genre} · ${count} track${count === 1 ? '' : 's'}`;
 }
 
 function selectAlbum(albumId, options = { withCoverflowUpdate: true }) {
@@ -419,13 +419,13 @@ function selectAlbum(albumId, options = { withCoverflowUpdate: true }) {
     const album = albums[albumId];
     const albumComposerEl = document.getElementById('album-composer');
     if (albumComposerEl) {
-        const composerText = album.composer || album.songwriter || 'Sin información de compositor';
-        albumComposerEl.textContent = `Compositor: ${composerText}`;
+        const composerText = album.composer || album.songwriter || 'No composer information';
+        albumComposerEl.textContent = `Composer: ${composerText}`;
     }
 
     const showName = getAlbumDisplayName(albumId, album.name);
     const songsTitle = document.getElementById('songs-title');
-    if (songsTitle) songsTitle.textContent = `${showName} - Canciones`;
+    if (songsTitle) songsTitle.textContent = `${showName} - Songs`;
 
     filteredSongs = (album.songs || []).map((song, index) => ({ albumId, albumFolder: album.folder, song, songIndex: index }));
     renderSongs(filteredSongs);
@@ -515,7 +515,7 @@ function renderSongs(songs) {
     if (!Array.isArray(songs) || songs.length === 0) {
         const noResults = document.createElement('li');
         noResults.className = 'no-results';
-        noResults.textContent = 'No se encontraron canciones.';
+        noResults.textContent = 'No songs found.';
         songsListElement.appendChild(noResults);
         return;
     }
@@ -536,7 +536,7 @@ function renderSongs(songs) {
                 <span class="song-number">${String(songIndex + 1).padStart(2, '0')}</span>
                 <span class="song-title">${songObject.title || fileNameToTitle(songObject.file)}</span>
             </div>
-            <button class="play-song-btn" data-index="${songIndex}" data-album-id="${albumId}" title="Reproducir">▶</button>
+            <button class="play-song-btn" data-index="${songIndex}" data-album-id="${albumId}" title="Play">▶</button>
         `;
 
         li.addEventListener('click', (e) => {
@@ -577,7 +577,7 @@ function playSong(index, songs, albumFolder, albumId) {
         updatePlayButton();
         updatePlayerInfo(song);
     }).catch(error => {
-        console.error('Error reproduciendo:', error);
+        console.error('Playback error:', error);
     });
 
     if (albums[currentAlbumId]) {
@@ -622,7 +622,7 @@ function updatePlayButton() {
     const playPauseBtn = document.getElementById('play-pause-btn');
     if (playPauseBtn) {
         playPauseBtn.textContent = isPlaying ? '⏸' : '▶';
-        playPauseBtn.title = isPlaying ? 'Pausar' : 'Reproducir';
+        playPauseBtn.title = isPlaying ? 'Pause' : 'Play';
     }
 }
 
@@ -670,11 +670,11 @@ function playPrevious() {
     }
 }
 
-function mostrarError(mensaje) {
-    console.error(mensaje);
+function showError(message) {
+    console.error(message);
     const albumList = document.getElementById('album-list');
     if (albumList) {
-        albumList.innerHTML = `<li class="error-message">${mensaje}</li>`;
+        albumList.innerHTML = `<li class="error-message">${message}</li>`;
     }
 }
 
@@ -745,11 +745,11 @@ function applySongFilter(query) {
             const album = albums[currentAlbumId];
             filteredSongs = (album.songs || []).map((song, index) => ({ albumId: currentAlbumId, albumFolder: album.folder, song, songIndex: index }));
             const songsTitle = document.getElementById('songs-title');
-            if (songsTitle) songsTitle.textContent = `${getAlbumDisplayName(currentAlbumId, album.name)} - Canciones`;
+            if (songsTitle) songsTitle.textContent = `${getAlbumDisplayName(currentAlbumId, album.name)} - Songs`;
         } else {
             filteredSongs = [];
             const songsTitle = document.getElementById('songs-title');
-            if (songsTitle) songsTitle.textContent = 'Canciones';
+            if (songsTitle) songsTitle.textContent = 'Songs';
         }
     } else {
         filteredSongs = [];
@@ -763,7 +763,7 @@ function applySongFilter(query) {
             });
         });
         const songsTitle = document.getElementById('songs-title');
-        if (songsTitle) songsTitle.textContent = 'Resultados de búsqueda';
+        if (songsTitle) songsTitle.textContent = 'Search results';
     }
 
     currentSongIndex = 0;
@@ -844,8 +844,8 @@ async function loadAlbums() {
         }
         initializeCoverflow();
     } catch (error) {
-        console.error('Error cargando álbumes:', error);
-        mostrarError('No se pudieron cargar los álbumes. Asegúrate de que albums.json existe.');
+        console.error('Error loading albums:', error);
+        showError('Could not load albums. Make sure albums.json exists.');
     }
 }
 
@@ -859,7 +859,7 @@ function updateUserGreeting() {
     const userName = getStoredUserName();
 
     if (greetingEl) {
-        greetingEl.textContent = userName ? `Hola, ${userName}` : '';
+        greetingEl.textContent = userName ? `Hello, ${userName}` : '';
     }
     if (logoutBtn) {
         logoutBtn.classList.toggle('hidden', !userName);
@@ -907,7 +907,7 @@ function handleLoginSubmission(event) {
         localStorage.setItem('armOnlineUser', userInput.value.trim());
         showLoginScreen(false);
     } else {
-        alert('Ingrese usuario y contraseña para continuar.');
+        alert('Enter username and password to continue.');
     }
 }
 
